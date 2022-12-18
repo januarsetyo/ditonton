@@ -1,3 +1,41 @@
+[![Codemagic build status](https://api.codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/status_badge.svg)](https://codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/latest_build)
+# CI Codemagic flutter-expert-project-main
+    Preparing build machine             25s
+    Fetching app sources                1s
+    Installing dependencies             48s
+    Building Android                    2m 7s
+    Publishing                          5s
+    Cleaning up                         < 1s
+
+# Build overview
+    ID          : 639f08bfd2ef77b4c5e36342
+    Index       : 4
+    Status      : finished
+    Workflow    : Default Workflow
+    Started by  :januarsn2@gmail.com
+    Started     : a day ago Dec 18th, 2022 at 19:34 WIB
+    Duration    : 2m 9s
+    Machine     : Mac mini M1
+    Branch      : master
+    Commit      : 51cfada
+
+# Artifacts
+    app-release.aab [20.85 MB]
+    mapping.txt [1.08 MB]
+
+# Current configuration
+    Flutter channel: default
+    Mode: release
+    Build for: Android 
+
+[![Codemagic build status](https://api.codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/status_badge.svg)](https://codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/latest_build)
+# Codemagic
+![codemagic](https://user-images.githubusercontent.com/91107708/208299240-a9328f71-8d18-4ad1-97a1-89e5572f8051.jpeg)
+# Firebase Analytics
+![analytics](https://user-images.githubusercontent.com/91107708/208299270-d2139066-082c-42e9-aec1-37d7363e3bff.jpeg)
+# Firebase Crashlytics
+![crashlytics](https://user-images.githubusercontent.com/91107708/208299300-9c22bf34-a690-4286-8b80-ae5c4df859ef.jpeg)
+
 # a199-flutter-expert-project
 
 Repository ini merupakan starter project submission kelas Flutter Expert Dicoding Indonesia.
