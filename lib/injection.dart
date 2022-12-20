@@ -39,8 +39,8 @@ import 'package:core/presentation/blocs/watchlist_movie_cubit.dart';
 import 'package:core/presentation/blocs/watchlist_tv_cubit.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
-import 'package:search/presentation/blocs/movie_search_cubit.dart';
-import 'package:search/presentation/blocs/tv_search_cubit.dart';
+import 'package:core/presentation/blocs/movie_search_cubit.dart';
+import 'package:core/presentation/blocs/tv_search_cubit.dart';
 
 final locator = GetIt.instance;
 

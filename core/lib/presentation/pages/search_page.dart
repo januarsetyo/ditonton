@@ -5,8 +5,9 @@ import 'package:core/domain/entities/tv.dart';
 import 'package:core/presentation/widgets/movie_card_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:search/presentation/blocs/movie_search_cubit.dart';
-import 'package:search/presentation/blocs/tv_search_cubit.dart';
+
+import '../blocs/movie_search_cubit.dart';
+import '../blocs/tv_search_cubit.dart';
 
 class SearchPage extends StatelessWidget {
   static const ROUTE_NAME = '/search';

@@ -2,12 +2,12 @@ import 'package:core/common/constants.dart';
 import 'package:core/domain/entities/movie.dart';
 import 'package:core/presentation/blocs/movie_list_cubit.dart';
 import 'package:core/presentation/pages/popular_movies_page.dart';
+import 'package:core/presentation/pages/search_page.dart';
 import 'package:core/presentation/pages/top_rated_movies_page.dart';
 import 'package:core/common/state_enum.dart';
 import 'package:core/presentation/widgets/poster_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:search/presentation/pages/search_page.dart';
 
 import '../widgets/build_subheading.dart';
 import '../widgets/custom_drawer.dart';

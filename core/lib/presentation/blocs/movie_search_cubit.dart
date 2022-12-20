@@ -4,9 +4,9 @@ import 'package:core/domain/entities/movie.dart';
 import 'package:core/domain/usecases/search_movies.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'movie_search_state.dart';
+part 'package:core/presentation/blocs/movie_search_state.dart';
 
-part 'movie_search_cubit.freezed.dart';
+part 'package:core/presentation/blocs/movie_search_cubit.freezed.dart';
 
 class MovieSearchCubit extends Cubit<MovieSearchState> {
   final SearchMovies searchMovies;

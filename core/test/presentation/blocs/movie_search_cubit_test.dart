@@ -6,7 +6,7 @@ import 'package:core/domain/usecases/search_movies.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:search/presentation/blocs/movie_search_cubit.dart';
+import 'package:core/presentation/blocs/movie_search_cubit.dart';
 
 import 'movie_search_cubit_test.mocks.dart';
 
