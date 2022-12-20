@@ -1,26 +1,33 @@
-[![Codemagic build status](https://api.codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/status_badge.svg)](https://codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/latest_build)
+[![Codemagic build status](https://api.codemagic.io/apps/63a0fd48aa810e4e76cb088b/63a0fd48aa810e4e76cb088a/status_badge.svg)](https://codemagic.io/apps/63a0fd48aa810e4e76cb088b/63a0fd48aa810e4e76cb088a/latest_build)
 # CI Codemagic flutter-expert-project-main
     Preparing build machine             25s
     Fetching app sources                1s
-    Installing dependencies             48s
-    Building Android                    2m 7s
-    Publishing                          5s
-    Cleaning up                         < 1s
+    Installing dependencies             8s
+    Building Android                    1m 44s
+    Publishing                          2s
+    Cleaning up                         6s
 
 # Build overview
-    ID          : 639f08bfd2ef77b4c5e36342
-    Index       : 4
+    ID          : 63a0fdd02758bda410d5e706
+    Index       : 2
     Status      : finished
     Workflow    : Default Workflow
     Started by  :januarsn2@gmail.com
-    Started     : a day ago Dec 18th, 2022 at 19:34 WIB
-    Duration    : 2m 9s
+    Started     : a day ago Dec 20th, 2022 at 07:12  WIB
+    Duration    : 2m 29s
     Machine     : Mac mini M1
     Branch      : master
-    Commit      : 51cfada
+    Commit      : 2275fe6
 
 # Artifacts
-    app-release.aab [20.85 MB]
+    app-release.apk [20.78 MB]
+    integration_test-release.aar [11.62 KB]
+    firebase_crashlytics-release.aar [16.00 KB]
+    firebase_core-release.aar [29.13 KB]
+    sqflite-release.aar [35.39 KB]
+    flutter_native_splash-release.aar [4.02 KB]
+    http_certificate_pinning-release.aar [9.75 KB]
+    path_provider_android-release.aar [12.05 KB]
     mapping.txt [1.08 MB]
 
 # Current configuration
@@ -28,9 +35,9 @@
     Mode: release
     Build for: Android 
 
-[![Codemagic build status](https://api.codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/status_badge.svg)](https://codemagic.io/apps/639f0713ed1dbd59a01f9cf4/639f0713ed1dbd59a01f9cf3/latest_build)
+[![Codemagic build status](https://api.codemagic.io/apps/63a0fd48aa810e4e76cb088b/63a0fd48aa810e4e76cb088a/status_badge.svg)](https://codemagic.io/apps/63a0fd48aa810e4e76cb088b/63a0fd48aa810e4e76cb088a/latest_build)
 # Codemagic
-![codemagic](https://user-images.githubusercontent.com/91107708/208299240-a9328f71-8d18-4ad1-97a1-89e5572f8051.jpeg)
+![codemagic](https://user-images.githubusercontent.com/91107708/208552983-471f7ed3-bd7a-45e3-b024-00143fb0985f.jpeg)
 # Firebase Analytics
 ![analytics](https://user-images.githubusercontent.com/91107708/208299270-d2139066-082c-42e9-aec1-37d7363e3bff.jpeg)
 # Firebase Crashlytics

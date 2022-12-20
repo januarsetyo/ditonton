@@ -9,9 +9,9 @@ void main() {
   });
 
   test('Should Use singleton pattern', () {
-    final testIntit = DatabaseHelper();
+    final testInit = DatabaseHelper();
     final result = DatabaseHelper();
 
-    expect(result, equals(testIntit));
+    expect(result, equals(testInit));
   });
 }
