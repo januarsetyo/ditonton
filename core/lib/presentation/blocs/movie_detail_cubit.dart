@@ -37,25 +37,25 @@ class MovieDetailCubit extends Cubit<MovieDetailState> {
     final recommendationResult = await getMovieRecommendations.execute(id);
 
     detailResult.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           movieState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (movie) {
+          (movie) {
         emit(state.copyWith(
           recommendationState: RequestState.Loading,
           movie: movie,
         ));
         recommendationResult.fold(
-          (failure) {
+              (failure) {
             emit(state.copyWith(
               recommendationState: RequestState.Error,
               message: failure.message,
             ));
           },
-          (movies) {
+              (movies) {
             emit(state.copyWith(
               recommendationState: RequestState.Loaded,
               movieRecommendations: movies,
@@ -71,8 +71,8 @@ class MovieDetailCubit extends Cubit<MovieDetailState> {
     final result = await saveWatchlist.execute(movie);
 
     final message = result.fold(
-      (failure) => failure.message,
-      (successMessage) => successMessage,
+          (failure) => failure.message,
+          (successMessage) => successMessage,
     );
 
     await loadWatchlistStatus(movie.id, message);
@@ -82,8 +82,8 @@ class MovieDetailCubit extends Cubit<MovieDetailState> {
     final result = await removeWatchlist.execute(movie);
 
     final message = result.fold(
-      (failure) => failure.message,
-      (successMessage) => successMessage,
+          (failure) => failure.message,
+          (successMessage) => successMessage,
     );
 
     await loadWatchlistStatus(movie.id, message);

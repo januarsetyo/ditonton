@@ -28,8 +28,8 @@ mixin _$PopularMoviesState {
 /// @nodoc
 abstract class $PopularMoviesStateCopyWith<$Res> {
   factory $PopularMoviesStateCopyWith(
-          PopularMoviesState value, $Res Function(PopularMoviesState) then) =
-      _$PopularMoviesStateCopyWithImpl<$Res, PopularMoviesState>;
+      PopularMoviesState value, $Res Function(PopularMoviesState) then) =
+  _$PopularMoviesStateCopyWithImpl<$Res, PopularMoviesState>;
   @useResult
   $Res call({RequestState state, List<Movie> movies, String message});
 }
@@ -55,15 +55,15 @@ class _$PopularMoviesStateCopyWithImpl<$Res, $Val extends PopularMoviesState>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       movies: null == movies
           ? _value.movies
           : movies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -72,7 +72,7 @@ class _$PopularMoviesStateCopyWithImpl<$Res, $Val extends PopularMoviesState>
 abstract class _$$_StateCopyWith<$Res>
     implements $PopularMoviesStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({RequestState state, List<Movie> movies, String message});
@@ -96,15 +96,15 @@ class __$$_StateCopyWithImpl<$Res>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       movies: null == movies
           ? _value._movies
           : movies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -114,8 +114,8 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {this.state = RequestState.Empty,
-      final List<Movie> movies = const [],
-      this.message = ""})
+        final List<Movie> movies = const [],
+        this.message = ""})
       : _movies = movies;
 
   @override
@@ -163,8 +163,8 @@ class _$_State implements _State {
 abstract class _State implements PopularMoviesState {
   const factory _State(
       {final RequestState state,
-      final List<Movie> movies,
-      final String message}) = _$_State;
+        final List<Movie> movies,
+        final String message}) = _$_State;
 
   @override
   RequestState get state;

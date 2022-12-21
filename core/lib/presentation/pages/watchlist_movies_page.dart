@@ -2,12 +2,13 @@ import 'package:core/common/constants.dart';
 import 'package:core/common/state_enum.dart';
 import 'package:core/common/utils.dart';
 import 'package:core/domain/entities/movie.dart';
-import 'package:core/domain/entities/tv.dart';
 import 'package:core/presentation/blocs/watchlist_movie_cubit.dart';
 import 'package:core/presentation/blocs/watchlist_tv_cubit.dart';
 import 'package:core/presentation/widgets/movie_card_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../widgets/tv_card_list.dart';
 
 class WatchlistMoviesPage extends StatefulWidget {
   static const ROUTE_NAME = '/watchlist-movie';
@@ -33,6 +34,7 @@ class _WatchlistMoviesPageState extends State<WatchlistMoviesPage>
     routeObserver.subscribe(this, ModalRoute.of(context)!);
   }
 
+  @override
   void didPopNext() {
     context.read<WatchlistMovieCubit>().fetchWatchlistMovies();
     context.read<WatchlistTvCubit>().fetchWatchlistTv();
@@ -44,8 +46,8 @@ class _WatchlistMoviesPageState extends State<WatchlistMoviesPage>
       length: 2,
       child: Scaffold(
           appBar: AppBar(
-            title: Text('Watchlist'),
-            bottom: TabBar(
+            title: const Text('Watchlist'),
+            bottom: const TabBar(
               unselectedLabelColor: kDavysGrey,
               indicatorColor: kMikadoYellow,
               tabs: [
@@ -60,7 +62,7 @@ class _WatchlistMoviesPageState extends State<WatchlistMoviesPage>
               ],
             ),
           ),
-          body: TabBarView(
+          body: const TabBarView(
             children: [
               MovieWatchList(),
               TvWatchList(),
@@ -93,7 +95,7 @@ class _MovieWatchListState extends State<MovieWatchList> {
       child: BlocBuilder<WatchlistMovieCubit, WatchlistMovieState>(
         builder: (context, data) {
           if (data.watchlistState == RequestState.Loading) {
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(),
             );
           } else if (data.watchlistState == RequestState.Loaded) {
@@ -105,12 +107,12 @@ class _MovieWatchListState extends State<MovieWatchList> {
               itemCount: data.watchlistMovies.length,
             );
           } else if (data.watchlistState == RequestState.Empty) {
-            return Center(
+            return const Center(
               child: Text('List Anda Kosong!'),
             );
           } else {
             return Center(
-              key: Key('error_message'),
+              key: const Key('error_message'),
               child: Text(data.message),
             );
           }
@@ -137,24 +139,24 @@ class _TvWatchListState extends State<TvWatchList> {
       child: BlocBuilder<WatchlistTvCubit, WatchlistTvState>(
         builder: (context, data) {
           if (data.watchlistState == RequestState.Loading) {
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(),
             );
           } else if (data.watchlistState == RequestState.Loaded) {
             return ListView.builder(
               itemBuilder: (context, index) {
                 final tv = data.watchlistTv[index];
-                return MovieCard<Tv>(tv);
+                return TvCard(tv);
               },
               itemCount: data.watchlistTv.length,
             );
           } else if (data.watchlistState == RequestState.Empty) {
-            return Center(
+            return const Center(
               child: Text('List Anda Kosong!'),
             );
           } else {
             return Center(
-              key: Key('error_message'),
+              key: const Key('error_message'),
               child: Text(data.message),
             );
           }

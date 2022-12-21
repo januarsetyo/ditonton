@@ -120,8 +120,8 @@ class DetailContent extends StatelessWidget {
                                 final message = cubit.state.watchlistMessage;
 
                                 if (message ==
-                                        MovieDetailCubit
-                                            .watchlistAddSuccessMessage ||
+                                    MovieDetailCubit
+                                        .watchlistAddSuccessMessage ||
                                     message ==
                                         MovieDetailCubit
                                             .watchlistRemoveSuccessMessage) {
@@ -214,15 +214,15 @@ class DetailContent extends StatelessWidget {
                                               ),
                                               child: CachedNetworkImage(
                                                 imageUrl:
-                                                    'https://image.tmdb.org/t/p/w500${movie.posterPath}',
+                                                'https://image.tmdb.org/t/p/w500${movie.posterPath}',
                                                 placeholder: (context, url) =>
                                                     Center(
-                                                  child:
+                                                      child:
                                                       CircularProgressIndicator(),
-                                                ),
+                                                    ),
                                                 errorWidget:
                                                     (context, url, error) =>
-                                                        Icon(Icons.error),
+                                                    Icon(Icons.error),
                                               ),
                                             ),
                                           ),

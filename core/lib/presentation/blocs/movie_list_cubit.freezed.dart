@@ -32,17 +32,17 @@ mixin _$MovieListState {
 /// @nodoc
 abstract class $MovieListStateCopyWith<$Res> {
   factory $MovieListStateCopyWith(
-          MovieListState value, $Res Function(MovieListState) then) =
-      _$MovieListStateCopyWithImpl<$Res, MovieListState>;
+      MovieListState value, $Res Function(MovieListState) then) =
+  _$MovieListStateCopyWithImpl<$Res, MovieListState>;
   @useResult
   $Res call(
       {List<Movie> nowPlayingMovies,
-      RequestState nowPlayingState,
-      List<Movie> popularMovies,
-      RequestState popularMoviesState,
-      List<Movie> topRatedMovies,
-      RequestState topRatedMoviesState,
-      String message});
+        RequestState nowPlayingState,
+        List<Movie> popularMovies,
+        RequestState popularMoviesState,
+        List<Movie> topRatedMovies,
+        RequestState topRatedMoviesState,
+        String message});
 }
 
 /// @nodoc
@@ -70,31 +70,31 @@ class _$MovieListStateCopyWithImpl<$Res, $Val extends MovieListState>
       nowPlayingMovies: null == nowPlayingMovies
           ? _value.nowPlayingMovies
           : nowPlayingMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       nowPlayingState: null == nowPlayingState
           ? _value.nowPlayingState
           : nowPlayingState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       popularMovies: null == popularMovies
           ? _value.popularMovies
           : popularMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       popularMoviesState: null == popularMoviesState
           ? _value.popularMoviesState
           : popularMoviesState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       topRatedMovies: null == topRatedMovies
           ? _value.topRatedMovies
           : topRatedMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       topRatedMoviesState: null == topRatedMoviesState
           ? _value.topRatedMoviesState
           : topRatedMoviesState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -103,17 +103,17 @@ class _$MovieListStateCopyWithImpl<$Res, $Val extends MovieListState>
 abstract class _$$_StateCopyWith<$Res>
     implements $MovieListStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {List<Movie> nowPlayingMovies,
-      RequestState nowPlayingState,
-      List<Movie> popularMovies,
-      RequestState popularMoviesState,
-      List<Movie> topRatedMovies,
-      RequestState topRatedMoviesState,
-      String message});
+        RequestState nowPlayingState,
+        List<Movie> popularMovies,
+        RequestState popularMoviesState,
+        List<Movie> topRatedMovies,
+        RequestState topRatedMoviesState,
+        String message});
 }
 
 /// @nodoc
@@ -138,31 +138,31 @@ class __$$_StateCopyWithImpl<$Res>
       nowPlayingMovies: null == nowPlayingMovies
           ? _value._nowPlayingMovies
           : nowPlayingMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       nowPlayingState: null == nowPlayingState
           ? _value.nowPlayingState
           : nowPlayingState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       popularMovies: null == popularMovies
           ? _value._popularMovies
           : popularMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       popularMoviesState: null == popularMoviesState
           ? _value.popularMoviesState
           : popularMoviesState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       topRatedMovies: null == topRatedMovies
           ? _value._topRatedMovies
           : topRatedMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       topRatedMoviesState: null == topRatedMoviesState
           ? _value.topRatedMoviesState
           : topRatedMoviesState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -172,12 +172,12 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {final List<Movie> nowPlayingMovies = const [],
-      this.nowPlayingState = RequestState.Empty,
-      final List<Movie> popularMovies = const [],
-      this.popularMoviesState = RequestState.Empty,
-      final List<Movie> topRatedMovies = const [],
-      this.topRatedMoviesState = RequestState.Empty,
-      this.message = ""})
+        this.nowPlayingState = RequestState.Empty,
+        final List<Movie> popularMovies = const [],
+        this.popularMoviesState = RequestState.Empty,
+        final List<Movie> topRatedMovies = const [],
+        this.topRatedMoviesState = RequestState.Empty,
+        this.message = ""})
       : _nowPlayingMovies = nowPlayingMovies,
         _popularMovies = popularMovies,
         _topRatedMovies = topRatedMovies;
@@ -269,12 +269,12 @@ class _$_State implements _State {
 abstract class _State implements MovieListState {
   const factory _State(
       {final List<Movie> nowPlayingMovies,
-      final RequestState nowPlayingState,
-      final List<Movie> popularMovies,
-      final RequestState popularMoviesState,
-      final List<Movie> topRatedMovies,
-      final RequestState topRatedMoviesState,
-      final String message}) = _$_State;
+        final RequestState nowPlayingState,
+        final List<Movie> popularMovies,
+        final RequestState popularMoviesState,
+        final List<Movie> topRatedMovies,
+        final RequestState topRatedMoviesState,
+        final String message}) = _$_State;
 
   @override
   List<Movie> get nowPlayingMovies;

@@ -19,13 +19,13 @@ class MovieSearchCubit extends Cubit<MovieSearchState> {
 
     final result = await searchMovies.execute(query);
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           message: failure.message,
           state: RequestState.Error,
         ));
       },
-      (data) {
+          (data) {
         emit(state.copyWith(
           searchResult: data,
           state: RequestState.Loaded,

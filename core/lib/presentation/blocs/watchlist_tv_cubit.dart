@@ -19,13 +19,13 @@ class WatchlistTvCubit extends Cubit<WatchlistTvState> {
 
     final result = await getWatchlistTv.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           watchlistState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (moviesData) {
+          (moviesData) {
         if (moviesData.isEmpty) {
           emit(state.copyWith(watchlistState: RequestState.Empty));
         } else {

@@ -128,8 +128,8 @@ class DetailContent extends StatelessWidget {
                                 final message = cubit.state.watchlistMessage;
 
                                 if (message ==
-                                        TvDetailCubit
-                                            .watchlistAddSuccessMessage ||
+                                    TvDetailCubit
+                                        .watchlistAddSuccessMessage ||
                                     message ==
                                         TvDetailCubit
                                             .watchlistRemoveSuccessMessage) {
@@ -217,24 +217,24 @@ class DetailContent extends StatelessWidget {
                                         color: kOxfordBlue,
                                         child: Column(
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                          CrossAxisAlignment.start,
                                           children: [
                                             CachedNetworkImage(
                                               fit: BoxFit.cover,
                                               height: 120,
                                               width: 130,
                                               imageUrl: season.posterPath !=
-                                                      null
+                                                  null
                                                   ? '$imageUrl${season.posterPath}'
                                                   : '$imageUrl${tv.posterPath}',
                                               placeholder: (context, url) =>
                                                   Center(
-                                                child:
+                                                    child:
                                                     CircularProgressIndicator(),
-                                              ),
+                                                  ),
                                               errorWidget:
                                                   (context, url, error) =>
-                                                      Icon(Icons.error),
+                                                  Icon(Icons.error),
                                             ),
                                             Padding(
                                               padding: const EdgeInsets.only(
@@ -245,7 +245,7 @@ class DetailContent extends StatelessWidget {
                                                     "${season.name}",
                                                     style: kSubtitle.copyWith(
                                                       fontWeight:
-                                                          FontWeight.bold,
+                                                      FontWeight.bold,
                                                     ),
                                                   ),
                                                   Text(
@@ -301,15 +301,15 @@ class DetailContent extends StatelessWidget {
                                               ),
                                               child: CachedNetworkImage(
                                                 imageUrl:
-                                                    'https://image.tmdb.org/t/p/w500${tvSeries.posterPath}',
+                                                'https://image.tmdb.org/t/p/w500${tvSeries.posterPath}',
                                                 placeholder: (context, url) =>
                                                     Center(
-                                                  child:
+                                                      child:
                                                       CircularProgressIndicator(),
-                                                ),
+                                                    ),
                                                 errorWidget:
                                                     (context, url, error) =>
-                                                        Icon(Icons.error),
+                                                    Icon(Icons.error),
                                               ),
                                             ),
                                           ),

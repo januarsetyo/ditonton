@@ -22,7 +22,7 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
   void initState() {
     super.initState();
     Future.microtask(
-      () => context.read<MovieListCubit>()
+          () => context.read<MovieListCubit>()
         ..fetchNowPlayingMovies()
         ..fetchPopularMovies()
         ..fetchTopRatedMovies(),
@@ -57,17 +57,17 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
               ),
               BlocBuilder<MovieListCubit, MovieListState>(
                   builder: (context, data) {
-                final state = data.nowPlayingState;
-                if (state == RequestState.Loading) {
-                  return Center(
-                    child: CircularProgressIndicator(),
-                  );
-                } else if (state == RequestState.Loaded) {
-                  return PosterList<Movie>(data.nowPlayingMovies);
-                } else {
-                  return Text('Failed');
-                }
-              }),
+                    final state = data.nowPlayingState;
+                    if (state == RequestState.Loading) {
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    } else if (state == RequestState.Loaded) {
+                      return PosterList<Movie>(data.nowPlayingMovies);
+                    } else {
+                      return Text('Failed');
+                    }
+                  }),
               BuildSubHeading(
                 title: 'Popular',
                 onTap: () =>
@@ -75,17 +75,17 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
               ),
               BlocBuilder<MovieListCubit, MovieListState>(
                   builder: (context, data) {
-                final state = data.popularMoviesState;
-                if (state == RequestState.Loading) {
-                  return Center(
-                    child: CircularProgressIndicator(),
-                  );
-                } else if (state == RequestState.Loaded) {
-                  return PosterList<Movie>(data.popularMovies);
-                } else {
-                  return Text('Failed');
-                }
-              }),
+                    final state = data.popularMoviesState;
+                    if (state == RequestState.Loading) {
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    } else if (state == RequestState.Loaded) {
+                      return PosterList<Movie>(data.popularMovies);
+                    } else {
+                      return Text('Failed');
+                    }
+                  }),
               BuildSubHeading(
                 title: 'Top Rated',
                 onTap: () =>
@@ -93,17 +93,17 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
               ),
               BlocBuilder<MovieListCubit, MovieListState>(
                   builder: (context, data) {
-                final state = data.topRatedMoviesState;
-                if (state == RequestState.Loading) {
-                  return Center(
-                    child: CircularProgressIndicator(),
-                  );
-                } else if (state == RequestState.Loaded) {
-                  return PosterList<Movie>(data.topRatedMovies);
-                } else {
-                  return Text('Failed');
-                }
-              }),
+                    final state = data.topRatedMoviesState;
+                    if (state == RequestState.Loading) {
+                      return Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    } else if (state == RequestState.Loaded) {
+                      return PosterList<Movie>(data.topRatedMovies);
+                    } else {
+                      return Text('Failed');
+                    }
+                  }),
             ],
           ),
         ),

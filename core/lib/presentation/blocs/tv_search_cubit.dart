@@ -18,13 +18,13 @@ class TvSearchCubit extends Cubit<TvSearchState> {
 
     final result = await searchTv.execute(query);
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           message: failure.message,
           state: RequestState.Error,
         ));
       },
-      (data) {
+          (data) {
         emit(state.copyWith(
           searchResult: data,
           state: RequestState.Loaded,

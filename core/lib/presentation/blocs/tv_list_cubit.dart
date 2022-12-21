@@ -26,13 +26,13 @@ class TvListCubit extends Cubit<TvListState> {
 
     final result = await getNowPlayingTv.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           nowPlayingState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (tvData) {
+          (tvData) {
         emit(state.copyWith(
           nowPlayingState: RequestState.Loaded,
           nowPlayingTv: tvData,
@@ -46,13 +46,13 @@ class TvListCubit extends Cubit<TvListState> {
 
     final result = await getPopularTv.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           popularState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (tvData) {
+          (tvData) {
         emit(state.copyWith(
           popularState: RequestState.Loaded,
           popularTv: tvData,
@@ -66,13 +66,13 @@ class TvListCubit extends Cubit<TvListState> {
 
     final result = await getTopRatedTv.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           topRatedState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (tvData) {
+          (tvData) {
         emit(state.copyWith(
           topRatedState: RequestState.Loaded,
           topRatedTv: tvData,

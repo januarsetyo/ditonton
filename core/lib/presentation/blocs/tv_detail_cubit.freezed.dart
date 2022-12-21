@@ -32,17 +32,17 @@ mixin _$TvDetailState {
 /// @nodoc
 abstract class $TvDetailStateCopyWith<$Res> {
   factory $TvDetailStateCopyWith(
-          TvDetailState value, $Res Function(TvDetailState) then) =
-      _$TvDetailStateCopyWithImpl<$Res, TvDetailState>;
+      TvDetailState value, $Res Function(TvDetailState) then) =
+  _$TvDetailStateCopyWithImpl<$Res, TvDetailState>;
   @useResult
   $Res call(
       {TvDetail? tv,
-      RequestState tvState,
-      List<Tv> tvRecommendations,
-      RequestState recommendationState,
-      String message,
-      bool isAddedToWatchlist,
-      String watchlistMessage});
+        RequestState tvState,
+        List<Tv> tvRecommendations,
+        RequestState recommendationState,
+        String message,
+        bool isAddedToWatchlist,
+        String watchlistMessage});
 }
 
 /// @nodoc
@@ -70,31 +70,31 @@ class _$TvDetailStateCopyWithImpl<$Res, $Val extends TvDetailState>
       tv: freezed == tv
           ? _value.tv
           : tv // ignore: cast_nullable_to_non_nullable
-              as TvDetail?,
+      as TvDetail?,
       tvState: null == tvState
           ? _value.tvState
           : tvState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       tvRecommendations: null == tvRecommendations
           ? _value.tvRecommendations
           : tvRecommendations // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       recommendationState: null == recommendationState
           ? _value.recommendationState
           : recommendationState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       isAddedToWatchlist: null == isAddedToWatchlist
           ? _value.isAddedToWatchlist
           : isAddedToWatchlist // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
       watchlistMessage: null == watchlistMessage
           ? _value.watchlistMessage
           : watchlistMessage // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -102,17 +102,17 @@ class _$TvDetailStateCopyWithImpl<$Res, $Val extends TvDetailState>
 /// @nodoc
 abstract class _$$_StateCopyWith<$Res> implements $TvDetailStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {TvDetail? tv,
-      RequestState tvState,
-      List<Tv> tvRecommendations,
-      RequestState recommendationState,
-      String message,
-      bool isAddedToWatchlist,
-      String watchlistMessage});
+        RequestState tvState,
+        List<Tv> tvRecommendations,
+        RequestState recommendationState,
+        String message,
+        bool isAddedToWatchlist,
+        String watchlistMessage});
 }
 
 /// @nodoc
@@ -137,31 +137,31 @@ class __$$_StateCopyWithImpl<$Res>
       tv: freezed == tv
           ? _value.tv
           : tv // ignore: cast_nullable_to_non_nullable
-              as TvDetail?,
+      as TvDetail?,
       tvState: null == tvState
           ? _value.tvState
           : tvState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       tvRecommendations: null == tvRecommendations
           ? _value._tvRecommendations
           : tvRecommendations // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       recommendationState: null == recommendationState
           ? _value.recommendationState
           : recommendationState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       isAddedToWatchlist: null == isAddedToWatchlist
           ? _value.isAddedToWatchlist
           : isAddedToWatchlist // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
       watchlistMessage: null == watchlistMessage
           ? _value.watchlistMessage
           : watchlistMessage // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -171,12 +171,12 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {this.tv,
-      this.tvState = RequestState.Empty,
-      final List<Tv> tvRecommendations = const [],
-      this.recommendationState = RequestState.Empty,
-      this.message = "",
-      this.isAddedToWatchlist = false,
-      this.watchlistMessage = ""})
+        this.tvState = RequestState.Empty,
+        final List<Tv> tvRecommendations = const [],
+        this.recommendationState = RequestState.Empty,
+        this.message = "",
+        this.isAddedToWatchlist = false,
+        this.watchlistMessage = ""})
       : _tvRecommendations = tvRecommendations;
 
   @override
@@ -251,12 +251,12 @@ class _$_State implements _State {
 abstract class _State implements TvDetailState {
   const factory _State(
       {final TvDetail? tv,
-      final RequestState tvState,
-      final List<Tv> tvRecommendations,
-      final RequestState recommendationState,
-      final String message,
-      final bool isAddedToWatchlist,
-      final String watchlistMessage}) = _$_State;
+        final RequestState tvState,
+        final List<Tv> tvRecommendations,
+        final RequestState recommendationState,
+        final String message,
+        final bool isAddedToWatchlist,
+        final String watchlistMessage}) = _$_State;
 
   @override
   TvDetail? get tv;

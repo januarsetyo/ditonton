@@ -28,8 +28,8 @@ mixin _$TvSearchState {
 /// @nodoc
 abstract class $TvSearchStateCopyWith<$Res> {
   factory $TvSearchStateCopyWith(
-          TvSearchState value, $Res Function(TvSearchState) then) =
-      _$TvSearchStateCopyWithImpl<$Res, TvSearchState>;
+      TvSearchState value, $Res Function(TvSearchState) then) =
+  _$TvSearchStateCopyWithImpl<$Res, TvSearchState>;
   @useResult
   $Res call({RequestState state, List<Tv> searchResult, String message});
 }
@@ -55,15 +55,15 @@ class _$TvSearchStateCopyWithImpl<$Res, $Val extends TvSearchState>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       searchResult: null == searchResult
           ? _value.searchResult
           : searchResult // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -71,7 +71,7 @@ class _$TvSearchStateCopyWithImpl<$Res, $Val extends TvSearchState>
 /// @nodoc
 abstract class _$$_StateCopyWith<$Res> implements $TvSearchStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({RequestState state, List<Tv> searchResult, String message});
@@ -95,15 +95,15 @@ class __$$_StateCopyWithImpl<$Res>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       searchResult: null == searchResult
           ? _value._searchResult
           : searchResult // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -113,8 +113,8 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {this.state = RequestState.Empty,
-      final List<Tv> searchResult = const [],
-      this.message = ""})
+        final List<Tv> searchResult = const [],
+        this.message = ""})
       : _searchResult = searchResult;
 
   @override
@@ -163,8 +163,8 @@ class _$_State implements _State {
 abstract class _State implements TvSearchState {
   const factory _State(
       {final RequestState state,
-      final List<Tv> searchResult,
-      final String message}) = _$_State;
+        final List<Tv> searchResult,
+        final String message}) = _$_State;
 
   @override
   RequestState get state;

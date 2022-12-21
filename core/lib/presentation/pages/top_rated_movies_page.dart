@@ -16,7 +16,7 @@ class _TopRatedMoviesPageState extends State<TopRatedMoviesPage> {
   void initState() {
     super.initState();
     Future.microtask(
-        () => context.read<TopRatedMoviesCubit>().fetchTopRatedMovies()
+            () => context.read<TopRatedMoviesCubit>().fetchTopRatedMovies()
     );
   }
 

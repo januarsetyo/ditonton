@@ -32,17 +32,17 @@ mixin _$MovieDetailState {
 /// @nodoc
 abstract class $MovieDetailStateCopyWith<$Res> {
   factory $MovieDetailStateCopyWith(
-          MovieDetailState value, $Res Function(MovieDetailState) then) =
-      _$MovieDetailStateCopyWithImpl<$Res, MovieDetailState>;
+      MovieDetailState value, $Res Function(MovieDetailState) then) =
+  _$MovieDetailStateCopyWithImpl<$Res, MovieDetailState>;
   @useResult
   $Res call(
       {MovieDetail? movie,
-      RequestState movieState,
-      List<Movie> movieRecommendations,
-      RequestState recommendationState,
-      String message,
-      bool isAddedToWatchlist,
-      String watchlistMessage});
+        RequestState movieState,
+        List<Movie> movieRecommendations,
+        RequestState recommendationState,
+        String message,
+        bool isAddedToWatchlist,
+        String watchlistMessage});
 }
 
 /// @nodoc
@@ -70,31 +70,31 @@ class _$MovieDetailStateCopyWithImpl<$Res, $Val extends MovieDetailState>
       movie: freezed == movie
           ? _value.movie
           : movie // ignore: cast_nullable_to_non_nullable
-              as MovieDetail?,
+      as MovieDetail?,
       movieState: null == movieState
           ? _value.movieState
           : movieState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       movieRecommendations: null == movieRecommendations
           ? _value.movieRecommendations
           : movieRecommendations // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       recommendationState: null == recommendationState
           ? _value.recommendationState
           : recommendationState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       isAddedToWatchlist: null == isAddedToWatchlist
           ? _value.isAddedToWatchlist
           : isAddedToWatchlist // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
       watchlistMessage: null == watchlistMessage
           ? _value.watchlistMessage
           : watchlistMessage // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -103,17 +103,17 @@ class _$MovieDetailStateCopyWithImpl<$Res, $Val extends MovieDetailState>
 abstract class _$$_StateCopyWith<$Res>
     implements $MovieDetailStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {MovieDetail? movie,
-      RequestState movieState,
-      List<Movie> movieRecommendations,
-      RequestState recommendationState,
-      String message,
-      bool isAddedToWatchlist,
-      String watchlistMessage});
+        RequestState movieState,
+        List<Movie> movieRecommendations,
+        RequestState recommendationState,
+        String message,
+        bool isAddedToWatchlist,
+        String watchlistMessage});
 }
 
 /// @nodoc
@@ -138,31 +138,31 @@ class __$$_StateCopyWithImpl<$Res>
       movie: freezed == movie
           ? _value.movie
           : movie // ignore: cast_nullable_to_non_nullable
-              as MovieDetail?,
+      as MovieDetail?,
       movieState: null == movieState
           ? _value.movieState
           : movieState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       movieRecommendations: null == movieRecommendations
           ? _value._movieRecommendations
           : movieRecommendations // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       recommendationState: null == recommendationState
           ? _value.recommendationState
           : recommendationState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       isAddedToWatchlist: null == isAddedToWatchlist
           ? _value.isAddedToWatchlist
           : isAddedToWatchlist // ignore: cast_nullable_to_non_nullable
-              as bool,
+      as bool,
       watchlistMessage: null == watchlistMessage
           ? _value.watchlistMessage
           : watchlistMessage // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -172,12 +172,12 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {this.movie,
-      this.movieState = RequestState.Empty,
-      final List<Movie> movieRecommendations = const [],
-      this.recommendationState = RequestState.Empty,
-      this.message = "",
-      this.isAddedToWatchlist = false,
-      this.watchlistMessage = ""})
+        this.movieState = RequestState.Empty,
+        final List<Movie> movieRecommendations = const [],
+        this.recommendationState = RequestState.Empty,
+        this.message = "",
+        this.isAddedToWatchlist = false,
+        this.watchlistMessage = ""})
       : _movieRecommendations = movieRecommendations;
 
   @override
@@ -253,12 +253,12 @@ class _$_State implements _State {
 abstract class _State implements MovieDetailState {
   const factory _State(
       {final MovieDetail? movie,
-      final RequestState movieState,
-      final List<Movie> movieRecommendations,
-      final RequestState recommendationState,
-      final String message,
-      final bool isAddedToWatchlist,
-      final String watchlistMessage}) = _$_State;
+        final RequestState movieState,
+        final List<Movie> movieRecommendations,
+        final RequestState recommendationState,
+        final String message,
+        final bool isAddedToWatchlist,
+        final String watchlistMessage}) = _$_State;
 
   @override
   MovieDetail? get movie;

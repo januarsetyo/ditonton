@@ -4,13 +4,10 @@ import 'package:core/domain/entities/movie.dart';
 import 'package:core/presentation/pages/movie_detail_page.dart';
 import 'package:flutter/material.dart';
 
-import '../../domain/entities/tv.dart';
-import '../pages/tv_detail_page.dart';
-
 class MovieCard<T> extends StatelessWidget {
-  final dynamic film;
+  final Movie movie;
 
-  MovieCard(this.film);
+  const MovieCard(this.movie, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +15,11 @@ class MovieCard<T> extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: InkWell(
         onTap: () {
-          if (T == Movie) {
-            Navigator.pushNamed(
-              context,
-              MovieDetailPage.ROUTE_NAME,
-              arguments: film.id,
-            );
-          } else {
-            Navigator.pushNamed(
-              context,
-              TvDetailPage.ROUTE_NAME,
-              arguments: film.id,
-            );
-          }
+          Navigator.pushNamed(
+            context,
+            MovieDetailPage.ROUTE_NAME,
+            arguments: movie.id,
+          );
         },
         child: Stack(
           alignment: Alignment.bottomLeft,
@@ -46,14 +35,14 @@ class MovieCard<T> extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      (T == Tv) ? film.name : film.title ?? '',
+                      movie.title ?? '',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: kHeading6,
                     ),
-                    SizedBox(height: 16),
+                    const SizedBox(height: 16),
                     Text(
-                      film.overview ?? '-',
+                      movie.overview ?? '-',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -67,15 +56,15 @@ class MovieCard<T> extends StatelessWidget {
                 bottom: 16,
               ),
               child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(8)),
                 child: CachedNetworkImage(
-                  imageUrl: '$BASE_IMAGE_URL${film.posterPath}',
+                  imageUrl: '$BASE_IMAGE_URL${movie.posterPath}',
                   width: 80,
-                  placeholder: (context, url) => Center(
+                  placeholder: (context, url) => const Center(
                     child: CircularProgressIndicator(),
                   ),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
                 ),
-                borderRadius: BorderRadius.all(Radius.circular(8)),
               ),
             ),
           ],

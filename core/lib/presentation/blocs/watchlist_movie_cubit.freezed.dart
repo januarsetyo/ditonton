@@ -28,13 +28,13 @@ mixin _$WatchlistMovieState {
 /// @nodoc
 abstract class $WatchlistMovieStateCopyWith<$Res> {
   factory $WatchlistMovieStateCopyWith(
-          WatchlistMovieState value, $Res Function(WatchlistMovieState) then) =
-      _$WatchlistMovieStateCopyWithImpl<$Res, WatchlistMovieState>;
+      WatchlistMovieState value, $Res Function(WatchlistMovieState) then) =
+  _$WatchlistMovieStateCopyWithImpl<$Res, WatchlistMovieState>;
   @useResult
   $Res call(
       {List<Movie> watchlistMovies,
-      RequestState watchlistState,
-      String message});
+        RequestState watchlistState,
+        String message});
 }
 
 /// @nodoc
@@ -58,15 +58,15 @@ class _$WatchlistMovieStateCopyWithImpl<$Res, $Val extends WatchlistMovieState>
       watchlistMovies: null == watchlistMovies
           ? _value.watchlistMovies
           : watchlistMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       watchlistState: null == watchlistState
           ? _value.watchlistState
           : watchlistState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -75,13 +75,13 @@ class _$WatchlistMovieStateCopyWithImpl<$Res, $Val extends WatchlistMovieState>
 abstract class _$$_StateCopyWith<$Res>
     implements $WatchlistMovieStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {List<Movie> watchlistMovies,
-      RequestState watchlistState,
-      String message});
+        RequestState watchlistState,
+        String message});
 }
 
 /// @nodoc
@@ -102,15 +102,15 @@ class __$$_StateCopyWithImpl<$Res>
       watchlistMovies: null == watchlistMovies
           ? _value._watchlistMovies
           : watchlistMovies // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       watchlistState: null == watchlistState
           ? _value.watchlistState
           : watchlistState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -120,8 +120,8 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {final List<Movie> watchlistMovies = const [],
-      this.watchlistState = RequestState.Empty,
-      this.message = ""})
+        this.watchlistState = RequestState.Empty,
+        this.message = ""})
       : _watchlistMovies = watchlistMovies;
 
   final List<Movie> _watchlistMovies;
@@ -174,8 +174,8 @@ class _$_State implements _State {
 abstract class _State implements WatchlistMovieState {
   const factory _State(
       {final List<Movie> watchlistMovies,
-      final RequestState watchlistState,
-      final String message}) = _$_State;
+        final RequestState watchlistState,
+        final String message}) = _$_State;
 
   @override
   List<Movie> get watchlistMovies;

@@ -28,8 +28,8 @@ mixin _$MovieSearchState {
 /// @nodoc
 abstract class $MovieSearchStateCopyWith<$Res> {
   factory $MovieSearchStateCopyWith(
-          MovieSearchState value, $Res Function(MovieSearchState) then) =
-      _$MovieSearchStateCopyWithImpl<$Res, MovieSearchState>;
+      MovieSearchState value, $Res Function(MovieSearchState) then) =
+  _$MovieSearchStateCopyWithImpl<$Res, MovieSearchState>;
   @useResult
   $Res call({RequestState state, List<Movie> searchResult, String message});
 }
@@ -55,15 +55,15 @@ class _$MovieSearchStateCopyWithImpl<$Res, $Val extends MovieSearchState>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       searchResult: null == searchResult
           ? _value.searchResult
           : searchResult // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -72,7 +72,7 @@ class _$MovieSearchStateCopyWithImpl<$Res, $Val extends MovieSearchState>
 abstract class _$$_StateCopyWith<$Res>
     implements $MovieSearchStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({RequestState state, List<Movie> searchResult, String message});
@@ -96,15 +96,15 @@ class __$$_StateCopyWithImpl<$Res>
       state: null == state
           ? _value.state
           : state // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       searchResult: null == searchResult
           ? _value._searchResult
           : searchResult // ignore: cast_nullable_to_non_nullable
-              as List<Movie>,
+      as List<Movie>,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -114,8 +114,8 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {this.state = RequestState.Empty,
-      final List<Movie> searchResult = const [],
-      this.message = ""})
+        final List<Movie> searchResult = const [],
+        this.message = ""})
       : _searchResult = searchResult;
 
   @override
@@ -164,8 +164,8 @@ class _$_State implements _State {
 abstract class _State implements MovieSearchState {
   const factory _State(
       {final RequestState state,
-      final List<Movie> searchResult,
-      final String message}) = _$_State;
+        final List<Movie> searchResult,
+        final String message}) = _$_State;
 
   @override
   RequestState get state;

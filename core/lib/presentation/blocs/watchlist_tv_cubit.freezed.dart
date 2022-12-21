@@ -28,8 +28,8 @@ mixin _$WatchlistTvState {
 /// @nodoc
 abstract class $WatchlistTvStateCopyWith<$Res> {
   factory $WatchlistTvStateCopyWith(
-          WatchlistTvState value, $Res Function(WatchlistTvState) then) =
-      _$WatchlistTvStateCopyWithImpl<$Res, WatchlistTvState>;
+      WatchlistTvState value, $Res Function(WatchlistTvState) then) =
+  _$WatchlistTvStateCopyWithImpl<$Res, WatchlistTvState>;
   @useResult
   $Res call(
       {List<Tv> watchlistTv, RequestState watchlistState, String message});
@@ -56,15 +56,15 @@ class _$WatchlistTvStateCopyWithImpl<$Res, $Val extends WatchlistTvState>
       watchlistTv: null == watchlistTv
           ? _value.watchlistTv
           : watchlistTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       watchlistState: null == watchlistState
           ? _value.watchlistState
           : watchlistState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -73,7 +73,7 @@ class _$WatchlistTvStateCopyWithImpl<$Res, $Val extends WatchlistTvState>
 abstract class _$$_StateCopyWith<$Res>
     implements $WatchlistTvStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -98,15 +98,15 @@ class __$$_StateCopyWithImpl<$Res>
       watchlistTv: null == watchlistTv
           ? _value._watchlistTv
           : watchlistTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       watchlistState: null == watchlistState
           ? _value.watchlistState
           : watchlistState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -116,8 +116,8 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {final List<Tv> watchlistTv = const [],
-      this.watchlistState = RequestState.Empty,
-      this.message = ""})
+        this.watchlistState = RequestState.Empty,
+        this.message = ""})
       : _watchlistTv = watchlistTv;
 
   final List<Tv> _watchlistTv;
@@ -170,8 +170,8 @@ class _$_State implements _State {
 abstract class _State implements WatchlistTvState {
   const factory _State(
       {final List<Tv> watchlistTv,
-      final RequestState watchlistState,
-      final String message}) = _$_State;
+        final RequestState watchlistState,
+        final String message}) = _$_State;
 
   @override
   List<Tv> get watchlistTv;

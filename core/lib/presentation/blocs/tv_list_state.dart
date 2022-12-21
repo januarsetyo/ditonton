@@ -10,6 +10,6 @@ class TvListState with _$TvListState {
     @Default([]) List<Tv> topRatedTv,
     @Default(RequestState.Empty) RequestState topRatedState,
     @Default("") String message,
-}) = _State;
+  }) = _State;
 
 }

@@ -38,25 +38,25 @@ class TvDetailCubit extends Cubit<TvDetailState> {
     final detailResult = await getTvDetail.execute(id);
     final recommendationResult = await getTvRecommendations.execute(id);
     detailResult.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           tvState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (tv) {
+          (tv) {
         emit(state.copyWith(
           recommendationState: RequestState.Loading,
           tv: tv,
         ));
         recommendationResult.fold(
-          (failure) {
+              (failure) {
             emit(state.copyWith(
               recommendationState: RequestState.Error,
               message: failure.message,
             ));
           },
-          (tv) {
+              (tv) {
             emit(state.copyWith(
               recommendationState: RequestState.Loaded,
               tvRecommendations: tv,
@@ -75,8 +75,8 @@ class TvDetailCubit extends Cubit<TvDetailState> {
     final result = await saveWatchlist.execute(movie);
 
     final message = result.fold(
-      (failure) => failure.message,
-      (successMessage) => successMessage,
+          (failure) => failure.message,
+          (successMessage) => successMessage,
     );
 
     await loadWatchlistStatus(movie.id, message);
@@ -86,8 +86,8 @@ class TvDetailCubit extends Cubit<TvDetailState> {
     final result = await removeWatchlist.execute(movie);
 
     final message = result.fold(
-      (failure) => failure.message,
-      (successMessage) => successMessage,
+          (failure) => failure.message,
+          (successMessage) => successMessage,
     );
 
     await loadWatchlistStatus(movie.id, message);

@@ -20,13 +20,13 @@ class PopularMoviesCubit extends Cubit<PopularMoviesState> {
     final result = await getPopularMovies.execute();
 
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           message: failure.message,
           state: RequestState.Error,
         ));
       },
-      (moviesData) {
+          (moviesData) {
         emit(state.copyWith(
           movies: moviesData,
           state: RequestState.Loaded,

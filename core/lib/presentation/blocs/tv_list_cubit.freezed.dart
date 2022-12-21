@@ -32,17 +32,17 @@ mixin _$TvListState {
 /// @nodoc
 abstract class $TvListStateCopyWith<$Res> {
   factory $TvListStateCopyWith(
-          TvListState value, $Res Function(TvListState) then) =
-      _$TvListStateCopyWithImpl<$Res, TvListState>;
+      TvListState value, $Res Function(TvListState) then) =
+  _$TvListStateCopyWithImpl<$Res, TvListState>;
   @useResult
   $Res call(
       {List<Tv> popularTv,
-      RequestState popularState,
-      List<Tv> nowPlayingTv,
-      RequestState nowPlayingState,
-      List<Tv> topRatedTv,
-      RequestState topRatedState,
-      String message});
+        RequestState popularState,
+        List<Tv> nowPlayingTv,
+        RequestState nowPlayingState,
+        List<Tv> topRatedTv,
+        RequestState topRatedState,
+        String message});
 }
 
 /// @nodoc
@@ -70,31 +70,31 @@ class _$TvListStateCopyWithImpl<$Res, $Val extends TvListState>
       popularTv: null == popularTv
           ? _value.popularTv
           : popularTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       popularState: null == popularState
           ? _value.popularState
           : popularState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       nowPlayingTv: null == nowPlayingTv
           ? _value.nowPlayingTv
           : nowPlayingTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       nowPlayingState: null == nowPlayingState
           ? _value.nowPlayingState
           : nowPlayingState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       topRatedTv: null == topRatedTv
           ? _value.topRatedTv
           : topRatedTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       topRatedState: null == topRatedState
           ? _value.topRatedState
           : topRatedState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ) as $Val);
   }
 }
@@ -102,17 +102,17 @@ class _$TvListStateCopyWithImpl<$Res, $Val extends TvListState>
 /// @nodoc
 abstract class _$$_StateCopyWith<$Res> implements $TvListStateCopyWith<$Res> {
   factory _$$_StateCopyWith(_$_State value, $Res Function(_$_State) then) =
-      __$$_StateCopyWithImpl<$Res>;
+  __$$_StateCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {List<Tv> popularTv,
-      RequestState popularState,
-      List<Tv> nowPlayingTv,
-      RequestState nowPlayingState,
-      List<Tv> topRatedTv,
-      RequestState topRatedState,
-      String message});
+        RequestState popularState,
+        List<Tv> nowPlayingTv,
+        RequestState nowPlayingState,
+        List<Tv> topRatedTv,
+        RequestState topRatedState,
+        String message});
 }
 
 /// @nodoc
@@ -137,31 +137,31 @@ class __$$_StateCopyWithImpl<$Res>
       popularTv: null == popularTv
           ? _value._popularTv
           : popularTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       popularState: null == popularState
           ? _value.popularState
           : popularState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       nowPlayingTv: null == nowPlayingTv
           ? _value._nowPlayingTv
           : nowPlayingTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       nowPlayingState: null == nowPlayingState
           ? _value.nowPlayingState
           : nowPlayingState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       topRatedTv: null == topRatedTv
           ? _value._topRatedTv
           : topRatedTv // ignore: cast_nullable_to_non_nullable
-              as List<Tv>,
+      as List<Tv>,
       topRatedState: null == topRatedState
           ? _value.topRatedState
           : topRatedState // ignore: cast_nullable_to_non_nullable
-              as RequestState,
+      as RequestState,
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -171,12 +171,12 @@ class __$$_StateCopyWithImpl<$Res>
 class _$_State implements _State {
   const _$_State(
       {final List<Tv> popularTv = const [],
-      this.popularState = RequestState.Empty,
-      final List<Tv> nowPlayingTv = const [],
-      this.nowPlayingState = RequestState.Empty,
-      final List<Tv> topRatedTv = const [],
-      this.topRatedState = RequestState.Empty,
-      this.message = ""})
+        this.popularState = RequestState.Empty,
+        final List<Tv> nowPlayingTv = const [],
+        this.nowPlayingState = RequestState.Empty,
+        final List<Tv> topRatedTv = const [],
+        this.topRatedState = RequestState.Empty,
+        this.message = ""})
       : _popularTv = popularTv,
         _nowPlayingTv = nowPlayingTv,
         _topRatedTv = topRatedTv;
@@ -267,12 +267,12 @@ class _$_State implements _State {
 abstract class _State implements TvListState {
   const factory _State(
       {final List<Tv> popularTv,
-      final RequestState popularState,
-      final List<Tv> nowPlayingTv,
-      final RequestState nowPlayingState,
-      final List<Tv> topRatedTv,
-      final RequestState topRatedState,
-      final String message}) = _$_State;
+        final RequestState popularState,
+        final List<Tv> nowPlayingTv,
+        final RequestState nowPlayingState,
+        final List<Tv> topRatedTv,
+        final RequestState topRatedState,
+        final String message}) = _$_State;
 
   @override
   List<Tv> get popularTv;

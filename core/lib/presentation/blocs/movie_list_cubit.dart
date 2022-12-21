@@ -26,13 +26,13 @@ class MovieListCubit extends Cubit<MovieListState> {
 
     final result = await getNowPlayingMovies.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           nowPlayingState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (moviesData) {
+          (moviesData) {
         emit(state.copyWith(
           nowPlayingState: RequestState.Loaded,
           nowPlayingMovies: moviesData,
@@ -46,13 +46,13 @@ class MovieListCubit extends Cubit<MovieListState> {
 
     final result = await getPopularMovies.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           popularMoviesState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (moviesData) {
+          (moviesData) {
         emit(state.copyWith(
           popularMoviesState: RequestState.Loaded,
           popularMovies: moviesData,
@@ -66,13 +66,13 @@ class MovieListCubit extends Cubit<MovieListState> {
 
     final result = await getTopRatedMovies.execute();
     result.fold(
-      (failure) {
+          (failure) {
         emit(state.copyWith(
           topRatedMoviesState: RequestState.Error,
           message: failure.message,
         ));
       },
-      (moviesData) {
+          (moviesData) {
         emit(state.copyWith(
           topRatedMoviesState: RequestState.Loaded,
           topRatedMovies: moviesData,
